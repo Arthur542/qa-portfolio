@@ -2,7 +2,7 @@
 
 This document contains manual test cases created to validate the authentication functionality of the system.
 
-The tests verify if users can successfully log into the system using valid credentials and how the system behaves when invalid login attempts are performed.
+The tests verify if users can successfully log into the system using valid credentials.
 ## Business Rules
 
 BR-AUTH-01: System must allow login with valid credentials.
