@@ -74,7 +74,8 @@ The system should accept the username and allow the user to proceed to the next 
 
 **Obtained Result**
 
-The system allowed the process to continue and displayed the message correctly.
+The system accepted the username and allowed the user to proceed.
+
 
 **Status:** Passed
 
