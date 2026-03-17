@@ -24,7 +24,7 @@ User must be authenticated and currently on the secure page.
 
 **Test Steps:**
 
-1. While on the secure page, press F5 or click the browser refresh button.
+1. While on the secure page, press "F5" or click the browser "refresh" button.
 
 **Expected Result:**  
 The system should maintain the active session and keep the user on the secure page.
@@ -48,10 +48,10 @@ User must be previously registered in the system.
 
 1. Access the login page  
 2. Enter a valid username and password  
-3. Click the login button  
-4. On the secure page, click logout  
+3. Click the "Login" button  
+4. On the secure page, click "Logout"  
 5. On the login page, enter valid credentials again  
-6. Click the login button  
+6. Click the "Login" button  
 
 **Expected Result:**  
 The system should authenticate the user again, redirect to the secure page, and display a success message.
@@ -75,7 +75,7 @@ User must not be authenticated in the system.
 
 1. Open the browser in incognito mode  
 2. Enter the URL directly in the browser: https://the-internet.herokuapp.com/secure  
-3. Press Enter  
+3. Press "Enter"  
 
 **Expected Result:**  
 The system should block access to the secure page and redirect the user to the login page.
@@ -98,9 +98,9 @@ User must be authenticated and then perform logout.
 **Test Steps:**
 
 1. Login with valid credentials  
-2. On the secure page, click logout  
+2. On the secure page, click "Logout"  
 3. In the same browser tab, type the URL directly: https://the-internet.herokuapp.com/secure  
-4. Press Enter  
+4. Press "Enter"  
 
 **Expected Result:**  
 The system should prevent access to the secure page and redirect to the login page.
