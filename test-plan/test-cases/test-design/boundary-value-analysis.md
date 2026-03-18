@@ -2,189 +2,279 @@
 
 ## Module Summary
 
-This document contains test cases created using the Boundary Value Analysis technique to validate the username field limits in the registration form.
+This module validates the **username field constraints during user registration**.
 
-The tests verify how the system behaves when values are inserted at the minimum and maximum boundaries of the allowed input range.
+The purpose of these tests is to verify how the system behaves when the **input values are at the boundaries of the allowed range**, including values **just below, equal to, and just above the limits**.
 
-## Business Rules
-
-BR-BVA-01: The system must enforce the minimum character limit for the username field.
-
-BR-BVA-02: The system must enforce the maximum character limit for the username field.
-
-BR-BVA-03: The system must allow usernames that fall within the valid character range.
-
-## Field Information
-
-Field: Username
-
-Minimum allowed length: 6 characters  
-Maximum allowed length: 30 characters
-
-## BVA-01 – Username with 5 characters (Minimum -1)
-
-**Type:** Boundary Value Analysis – Negative  
-**Priority:** High  
-**Module:** Registration  
-**Precondition:**  
-User must be on the registration page with all other required fields filled correctly.
-
-**Test Steps:**
-
-1. Access the register page  
-2. Fill all required fields correctly  
-3. Enter a username containing 5 characters valid 
-4. Click the "Next" button  
-
-**Test Data**
-
-Minimum allowed: 6 characters  
-Maximum allowed: 30 characters  
-
-**Expected Result**
-
-The system should display a validation message informing that the username does not meet the minimum character requirement.
-
-**Obtained Result**
-
-The system displayed the message correctly.
-
-**Status:** Passed
+Boundary Value Analysis helps ensure that the system correctly enforces validation rules at critical input limits.
 
 ---
 
-## BVA-02 – Username with 6 characters (Minimum)
+# Business Rule
 
-**Type:** Boundary Value Analysis – Positive  
-**Priority:** High  
-**Module:** Registration  
-**Precondition:**  
-User must be on the registration page with all other required fields filled correctly.
+The system must allow user registration **only if the username contains between 6 and 30 valid characters**.
 
-**Test Steps**
-
-1. Access the register page  
-2. Fill all required fields correctly  
-3. Enter a username containing 6 characters valid  
-4. Click the "Next" button  
-
-**Expected Result**
-
-The system should accept the username and allow the user to proceed to the next step of the registration process.
-
-**Obtained Result**
-
-The system accepted the username and allowed the user to proceed.
-
-
-**Status:** Passed
+Values outside this range must be rejected and the user must be notified with an appropriate validation message.
 
 ---
 
-## BVA-03 – Username with 31 characters (Maximum +1)
+# Boundary Values
 
-**Type:** Boundary Value Analysis – Negative  
-**Priority:** High  
-**Module:** Registration  
-**Precondition:**  
-User must be on the registration page with all required fields filled correctly.
-
-**Test Steps**
-
-1. Access the register page  
-2. Fill all required fields correctly  
-3. Enter a username containing 31 characters valid
-4. Click the "Next" button  
-
-**Expected Result**
-
-The system should display a validation message informing that the username exceeded the maximum character limit.
-
-**Obtained Result**
-
-The system displayed the message correctly.
-
-**Status:** Passed
+| Boundary Type | Value         | Expected Behavior |
+| ------------- | ------------- | ----------------- |
+| Minimum -1    | 5 characters  | Invalid           |
+| Minimum       | 6 characters  | Valid             |
+| Minimum +1    | 7 characters  | Valid             |
+| Maximum -1    | 29 characters | Valid             |
+| Maximum       | 30 characters | Valid             |
+| Maximum +1    | 31 characters | Invalid           |
 
 ---
 
-## BVA-04 – Username with 7 characters (Minimum +1)
-
-**Type:** Boundary Value Analysis – Positive  
-**Priority:** High  
-**Module:** Registration  
-**Precondition:**  
-User must be on the registration page with all required fields filled correctly.
-
-**Test Steps**
-
-1. Access the register page  
-2. Fill all required fields correctly  
-3. Enter a username containing 7 characters valid 
-4. Click the "Next" button  
-
-**Expected Result**
-
-The system should accept the username and allow the user to proceed.
-
-**Obtained Result**
-
-The system accepted the username and allowed the user to proceed.
-
-**Status:** Passed
+# Test Cases
 
 ---
 
-## BVA-05 – Username with 29 characters (Maximum -1)
+## TC_BVA_01
 
-**Type:** Boundary Value Analysis – Positive  
-**Priority:** High  
-**Module:** Registration  
-**Precondition:**  
-User must be on the registration page with all required fields filled correctly.
+**Title:** Validate username with 5 characters (Minimum -1)
 
-**Test Steps**
+**Type:** Functional - Boundary Value Analysis (Negative)
 
-1. Access the register page  
-2. Fill all required fields correctly  
-3. Enter a username containing 29 characters valid
-4. Click the "Next" button  
+**Module:** Registration
 
-**Expected Result**
+**Priority:** High
 
-The system should accept the username and allow the user to proceed.
+**ID:** BVA-01
 
-**Obtained Result**
+**Precondition:**
+User must be on the registration page with all other fields filled with valid values.
 
-The system accepted the username and allowed the user to proceed.
+### Steps
 
-**Status:** Passed
+1. Access the register page
+2. Fill all valid fields correctly
+3. Enter a value with **5 valid characters** in the "Username" field
+4. Click the **Next** button
+
+### Test Data
+
+Minimum allowed characters: 6
+Maximum allowed characters: 30
+
+### Expected Result
+
+The system must prevent the user from proceeding and display a message indicating that the field has not reached the minimum number of allowed characters.
+
+### Actual Result
+
+The system prevented the action and displayed the correct validation message.
+
+### Status
+
+Approved
+
+---
+
+## TC_BVA_02
+
+**Title:** Validate username with 6 valid characters
+
+**Type:** Functional - Boundary Value Analysis (Positive)
+
+**Module:** Registration
+
+**Priority:** High
+
+**ID:** BVA-02
+
+**Precondition:**
+User must be on the registration page with all other fields filled with valid values.
+
+### Steps
+
+1. Access the register page
+2. Fill all valid fields correctly
+3. Enter a value with **6 valid characters** in the "Username" field
+4. Click the **Next** button
+
+### Test Data
+
+Minimum allowed characters: 6
+Maximum allowed characters: 30
+
+### Expected Result
+
+The system should allow the user to proceed without displaying an error message.
+
+### Actual Result
+
+The system allowed the user to proceed and no error message was displayed.
+
+### Status
+
+Approved
 
 ---
 
-## BVA-06 – Username with 30 characters (Maximum)
+## TC_BVA_03
 
-**Type:** Boundary Value Analysis – Positive  
-**Priority:** High  
-**Module:** Registration  
-**Precondition:**  
-User must be on the registration page with all required fields filled correctly.
+**Title:** Validate username with 31 characters (Maximum +1)
 
-**Test Steps**
+**Type:** Functional - Boundary Value Analysis (Negative)
 
-1. Access the register page  
-2. Fill all required fields correctly  
-3. Enter a username containing 30 characters valid
-4. Click the "Next" button  
+**Module:** Registration
 
-**Expected Result**
+**Priority:** High
 
-The system should accept the username and allow the user to proceed to the next step.
+**ID:** BVA-03
 
-**Obtained Result**
+**Precondition:**
+User must be on the registration page with all other fields filled with valid values.
 
-The system accepted the username and allowed the user to proceed.
+### Steps
 
-**Status:** Passed
+1. Access the register page
+2. Fill all valid fields correctly
+3. Enter a value with **31 valid characters** in the "Username" field
+4. Click the **Next** button
+
+### Test Data
+
+Minimum allowed characters: 6
+Maximum allowed characters: 30
+
+### Expected Result
+
+The system must prevent the user from proceeding and display an error message indicating the character limit for that field.
+
+### Actual Result
+
+The system prevented the action and displayed the correct error message.
+
+### Status
+
+Approved
 
 ---
+
+## TC_BVA_04
+
+**Title:** Validate username with 7 characters (Minimum +1)
+
+**Type:** Functional - Boundary Value Analysis (Positive)
+
+**Module:** Registration
+
+**Priority:** High
+
+**ID:** BVA-04
+
+**Precondition:**
+User must be on the registration page with all other fields filled with valid values.
+
+### Steps
+
+1. Access the register page
+2. Fill all valid fields correctly
+3. Enter a value with **7 valid characters** in the "Username" field
+4. Click the **Next** button
+
+### Test Data
+
+Minimum allowed characters: 6
+Maximum allowed characters: 30
+
+### Expected Result
+
+The system should allow the user to proceed without displaying an error message.
+
+### Actual Result
+
+The system allowed the user to proceed without displaying any error message.
+
+### Status
+
+Approved
+
+---
+
+## TC_BVA_05
+
+**Title:** Validate username with 29 characters (Maximum -1)
+
+**Type:** Functional - Boundary Value Analysis (Positive)
+
+**Module:** Registration
+
+**Priority:** High
+
+**ID:** BVA-05
+
+**Precondition:**
+User must be on the registration page with all other fields filled with valid values.
+
+### Steps
+
+1. Access the register page
+2. Fill all valid fields correctly
+3. Enter a value with **29 valid characters** in the "Username" field
+4. Click the **Next** button
+
+### Test Data
+
+Minimum allowed characters: 6
+Maximum allowed characters: 30
+
+### Expected Result
+
+The system should allow the user to proceed without displaying an error message.
+
+### Actual Result
+
+The system allowed the user to proceed without displaying any error message.
+
+### Status
+
+Approved
+
+---
+
+## TC_BVA_06
+
+**Title:** Validate username with 30 valid characters
+
+**Type:** Functional - Boundary Value Analysis (Positive)
+
+**Module:** Registration
+
+**Priority:** High
+
+**ID:** BVA-06
+
+**Precondition:**
+User must be on the registration page with all other fields filled with valid values.
+
+### Steps
+
+1. Access the register page
+2. Fill all valid fields correctly
+3. Enter a value with **30 valid characters** in the "Username" field
+4. Click the **Next** button
+
+### Test Data
+
+Minimum allowed characters: 6
+Maximum allowed characters: 30
+
+### Expected Result
+
+The system should allow the user to proceed without displaying an error message.
+
+### Actual Result
+
+The system allowed the user to proceed without displaying any error message.
+
+### Status
+
+Approved
