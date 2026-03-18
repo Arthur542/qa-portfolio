@@ -8,6 +8,8 @@ This module focuses on preventing invalid data from being processed, ensuring bo
 
 ---
 
+# Feature: User Authentication - Data Validation
+
 ## Business Rules
 
 **BR-01**
@@ -43,10 +45,6 @@ The system must allow authentication only if the username length is between 6 an
 | Less than 8 characters      | Reject input and display error message |
 | Between 8 and 30 characters | Accept input                           |
 | More than 30 characters     | Reject input and display error message |
-
----
-
-# Feature: User Authentication - Data Validation
 
 ---
 
