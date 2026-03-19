@@ -54,6 +54,6 @@ Each module includes:
 
 ---
 
-## 🚀 Purpose
+## Purpose
 
 This portfolio was created to showcase readiness for a **Junior QA (Manual Tester)** position, focusing on practical and structured testing approaches used in real projects.
