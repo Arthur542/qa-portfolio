@@ -1,9 +1,41 @@
 # Test Plan
 
-This folder contains the test plan for the QA Portfolio project.
+## Overview
 
-The test plan describes the testing scope, objectives, environment, and strategy used during manual testing activities.
+This section defines the overall testing strategy for the application, outlining how testing activities are planned, organized, and executed to ensure software quality.
 
-To view the complete document, open the file below:
+---
 
-testplan.md
+## Objective
+
+* Establish a clear testing approach
+* Define scope and testing coverage
+* Ensure all critical functionalities are validated
+* Provide a structured guide for test execution
+
+---
+
+## Scope
+
+The test plan covers the following areas:
+
+*  User Authentication (login and credential validation)
+*  Input validation (username and password rules)
+*  Promotion system (discount rules and conditions)
+
+Including:
+
+* Functional testing
+* Positive and negative scenarios
+* Validation of business rules
+
+---
+
+## Expected Outcome
+
+* Ensure system stability and reliability
+* Validate that all business rules are correctly implemented
+* Provide clear direction for test execution
+* Improve overall software quality
+
+---
