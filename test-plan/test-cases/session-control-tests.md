@@ -56,8 +56,8 @@ User must be previously registered in the system.
 
 **Test Data:**
 
- Username: tomsmith
- Password: SuperSecretPassword!
+Username: tomsmith  
+Password: SuperSecretPassword!
 
 **Expected Result:**  
 The system should authenticate the user again, redirect to the secure page, and display a success message.
@@ -106,7 +106,12 @@ User must be authenticated and then perform logout.
 1. Login with valid credentials  
 2. On the secure page, click "Logout"  
 3. In the same browser tab, type the URL directly: https://the-internet.herokuapp.com/secure  
-4. Press "Enter"  
+4. Press "Enter"
+
+**Test Data:**
+
+Username: tomsmith  
+Password: SuperSecretPassword!
 
 **Expected Result:**  
 The system should prevent access to the secure page and redirect to the login page.
