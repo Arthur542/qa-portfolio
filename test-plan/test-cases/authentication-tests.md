@@ -19,10 +19,11 @@ User must be previously registered in the system.
 
 **Test Steps:**
 
-1. Access the login page  
-2. Enter a valid username  
-3. Enter a valid password  
-4. Click the "Login" button  
+1. Access the website: https://the-internet.herokuapp.com/login
+2. Access the login page  
+3. Enter a valid username  
+4. Enter a valid password  
+5. Click the "Login" button  
 
 **Test Data:**
 
@@ -48,10 +49,11 @@ User must be previously registered in the system.
 
 **Test Steps:**
 
-1. Access the login page  
-2. Enter a valid username  
-3. Enter a valid password  
-4. Press the "Enter" key  
+1. Access the website: https://the-internet.herokuapp.com/login
+2. Access the login page  
+3. Enter a valid username  
+4. Enter a valid password  
+5. Press the "Enter" key  
 
 **Test Data:**
 
