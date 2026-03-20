@@ -69,24 +69,26 @@ The discount is applied to the **next two products purchased**.
 
 ## TC_EP_01
 
-**Title:** Validate username with less than 6 valid characters
-**Type:** Functional - Equivalence Partitioning (Negative)
-**Module:** Registration
-**Priority:** High
-**ID:** EP-01
+**Title:** Validate username with less than 6 valid characters  
+**Type:** Functional - Equivalence Partitioning (Negative)  
+**Module:** Registration  
+**Priority:** High  
+**ID:** EP-01  
 **Precondition:**
 User must be on the registration page with all other fields filled with valid values.
 
 ### Steps
 
-1. Access the registration page
-2. Fill all valid fields correctly
-3. Enter a value with **3 valid characters** in the "Username" field
-4. Click the **Next** button
+1. Access website: https://accounts.google.com/lifecycle/steps/signup/username?TL=AHU8sQsvP3J5xkWIYArXuQNXyiodDh_kIXZ9-LHDw2SOoyPblilGhuK5eV1-kwbA&continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&dsh=S1275079143%3A1774029772256352&flowEntry=SignUp&flowName=GlifWebSignIn
+2. Access the registration page
+3. Fill all valid fields correctly
+4. Enter a value with **3 valid characters** in the "Username" field
+5. Click the **Next** button
 
 ### Test Data
 
-Minimum allowed characters: 6
+Username: admin1234567890admin1234567890a  
+Minimum allowed characters: 6  
 Maximum allowed characters: 30
 
 ### Expected Result
@@ -107,24 +109,26 @@ Approved
 
 ## TC_EP_02
 
-**Title:** Validate username with 10 valid characters
-**Type:** Functional - Equivalence Partitioning (Positive)
-**Module:** Registration
-**Priority:** High
-**ID:** EP-02
+**Title:** Validate username with 10 valid characters  
+**Type:** Functional - Equivalence Partitioning (Positive)  
+**Module:** Registration  
+**Priority:** High  
+**ID:** EP-02  
 **Precondition:**
 User must be on the registration page with all other fields filled with valid values.
 
 ### Steps
 
-1. Access the registration page
-2. Fill all valid fields correctly
-3. Enter a value with **10 valid characters** in the "Username" field
-4. Click the **Next** button
+1. Access website: https://accounts.google.com/lifecycle/steps/signup/username?TL=AHU8sQsvP3J5xkWIYArXuQNXyiodDh_kIXZ9-LHDw2SOoyPblilGhuK5eV1-kwbA&continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&dsh=S1275079143%3A1774029772256352&flowEntry=SignUp&flowName=GlifWebSignIn
+2. Access the registration page
+3. Fill all valid fields correctly
+4. Enter a value with **10 valid characters** in the "Username" field
+5. Click the **Next** button
 
 ### Test Data
 
-Minimum allowed characters: 6
+Username: admin12345  
+Minimum allowed characters: 6  
 Maximum allowed characters: 30
 
 ### Expected Result
@@ -143,24 +147,26 @@ Approved
 
 ## TC_EP_03
 
-**Title:** Validate username with more than 30 valid characters
-**Type:** Functional - Equivalence Partitioning (Negative)
-**Module:** Registration
-**Priority:** High
-**ID:** EP-03
+**Title:** Validate username with more than 30 valid characters  
+**Type:** Functional - Equivalence Partitioning (Negative)  
+**Module:** Registration  
+**Priority:** High  
+**ID:** EP-03  
 **Precondition:**
 User must be on the registration page with all other fields filled with valid values.
 
 ### Steps
 
-1. Access the registration page
-2. Fill all valid fields correctly
-3. Enter a value with **35 valid characters** in the "Username" field
-4. Click the **Next** button
+1. Access website: https://accounts.google.com/lifecycle/steps/signup/username?TL=AHU8sQsvP3J5xkWIYArXuQNXyiodDh_kIXZ9-LHDw2SOoyPblilGhuK5eV1-kwbA&continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&dsh=S1275079143%3A1774029772256352&flowEntry=SignUp&flowName=GlifWebSignIn
+2. Access the registration page
+3. Fill all valid fields correctly
+4. Enter a value with **35 valid characters** in the "Username" field
+5. Click the **Next** button
 
 ### Test Data
 
-Minimum allowed characters: 6
+Username: admin1234567890admin1234567890admin  
+Minimum allowed characters: 6  
 Maximum allowed characters: 30
 
 ### Expected Result
@@ -181,23 +187,25 @@ Approved
 
 ## TC_EP_04
 
-**Title:** Validate password with less than 8 valid characters
-**Type:** Functional - Equivalence Partitioning (Negative)
-**Module:** Registration
-**Priority:** High
-**ID:** EP-04
+**Title:** Validate password with less than 8 valid characters  
+**Type:** Functional - Equivalence Partitioning (Negative)  
+**Module:** Registration  
+**Priority:** High  
+**ID:** EP-04  
 **Precondition:**
 User must be on the registration page with all other fields filled with valid values.
 
 ### Steps
 
-1. Access the registration page
-2. Fill all valid fields correctly
-3. Enter a value with **3 valid characters** in the "Password" field
-4. Click the **Next** button
+1. Access website: https://accounts.google.com/lifecycle/steps/signup/password?TL=AHU8sQsvP3J5xkWIYArXuQNXyiodDh_kIXZ9-LHDw2SOoyPblilGhuK5eV1-kwbA&continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&dsh=S1275079143%3A1774029772256352&flowEntry=SignUp&flowName=GlifWebSignIn
+2. Access the registration page
+3. Fill all valid fields correctly
+4. Enter a value with **3 valid characters** in the "Password" field
+5. Click the **Next** button
 
 ### Test Data
 
+Password: password  
 Minimum allowed characters: 8
 Maximum allowed characters: 100
 
@@ -219,24 +227,26 @@ Approved
 
 ## TC_EP_05
 
-**Title:** Validate password with 50 valid characters
-**Type:** Functional - Equivalence Partitioning (Positive)
-**Module:** Registration
-**Priority:** High
-**ID:** EP-05
+**Title:** Validate password with 50 valid characters  
+**Type:** Functional - Equivalence Partitioning (Positive)  
+**Module:** Registration  
+**Priority:** High  
+**ID:** EP-05  
 **Precondition:**
 User must be on the registration page with all other fields filled with valid values.
 
 ### Steps
 
-1. Access the registration page
-2. Fill all valid fields correctly
-3. Enter a value with **50 valid characters** in the "Password" field
-4. Click the **Next** button
+1. Access website: https://accounts.google.com/lifecycle/steps/signup/password?TL=AHU8sQsvP3J5xkWIYArXuQNXyiodDh_kIXZ9-LHDw2SOoyPblilGhuK5eV1-kwbA&continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&dsh=S1275079143%3A1774029772256352&flowEntry=SignUp&flowName=GlifWebSignIn
+2. Access the registration page
+3. Fill all valid fields correctly
+4. Enter a value with **50 valid characters** in the "Password" field
+5. Click the **Next** button
 
 ### Test Data
 
-Minimum allowed characters: 8
+Password: passwordpasswordpasswordpasswordpasswordpasswordpa  
+Minimum allowed characters: 8  
 Maximum allowed characters: 100
 
 ### Expected Result
@@ -255,24 +265,26 @@ Approved
 
 ## TC_EP_06
 
-**Title:** Validate password with more than 100 valid characters
-**Type:** Functional - Equivalence Partitioning (Negative)
-**Module:** Registration
-**Priority:** High
-**ID:** EP-06
+**Title:** Validate password with more than 100 valid characters  
+**Type:** Functional - Equivalence Partitioning (Negative)  
+**Module:** Registration  
+**Priority:** High  
+**ID:** EP-06  
 **Precondition:**
 User must be on the registration page with all other fields filled with valid values.
 
 ### Steps
 
-1. Access the registration page
-2. Fill all valid fields correctly
-3. Enter a value with **180 valid characters** in the "Password" field
-4. Click the **Next** button
+1. Access website: https://accounts.google.com/lifecycle/steps/signup/password?TL=AHU8sQsvP3J5xkWIYArXuQNXyiodDh_kIXZ9-LHDw2SOoyPblilGhuK5eV1-kwbA&continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&dsh=S1275079143%3A1774029772256352&flowEntry=SignUp&flowName=GlifWebSignIn
+2. Access the registration page
+3. Fill all valid fields correctly
+4. Enter a value with **180 valid characters** in the "Password" field
+5. Click the **Next** button
 
 ### Test Data
 
-Minimum allowed characters: 8
+Password: passwordpasswordpasswordpasswordpasswordpasswordpapasswordpasswordpasswordpasswordpasswordpasswordpapasswordpasswordpasswordpasswordpasswordpasswordpapasswordpasswordpasswordpasswo  
+Minimum allowed characters: 8  
 Maximum allowed characters: 100
 
 ### Expected Result
