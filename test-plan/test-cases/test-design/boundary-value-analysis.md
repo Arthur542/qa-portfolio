@@ -52,14 +52,16 @@ User must be on the registration page with all other fields filled with valid va
 
 ### Steps
 
-1. Access the register page
-2. Fill all valid fields correctly
-3. Enter a value with **5 valid characters** in the "Username" field
-4. Click the **Next** button
+1. Access the website: https://accounts.google.com/lifecycle/steps/signup/username?TL=AHU8sQsvP3J5xkWIYArXuQNXyiodDh_kIXZ9-LHDw2SOoyPblilGhuK5eV1-kwbA&continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&dsh=S1275079143%3A1774029772256352&flowEntry=SignUp&flowName=GlifWebSignIn
+2. Access the register page
+3. Fill all valid fields correctly
+4. Enter a value with **5 valid characters** in the "Username" field
+5. Click the **Next** button
 
 ### Test Data
 
-Minimum allowed characters: 6
+Username: admin  
+Minimum allowed characters: 6  
 Maximum allowed characters: 30
 
 ### Expected Result
@@ -93,14 +95,16 @@ User must be on the registration page with all other fields filled with valid va
 
 ### Steps
 
-1. Access the register page
-2. Fill all valid fields correctly
-3. Enter a value with **6 valid characters** in the "Username" field
-4. Click the **Next** button
+1. Access the website: https://accounts.google.com/lifecycle/steps/signup/username?TL=AHU8sQsvP3J5xkWIYArXuQNXyiodDh_kIXZ9-LHDw2SOoyPblilGhuK5eV1-kwbA&continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&dsh=S1275079143%3A1774029772256352&flowEntry=SignUp&flowName=GlifWebSignIn
+2. Access the register page
+3. Fill all valid fields correctly
+4. Enter a value with **6 valid characters** in the "Username" field
+5. Click the **Next** button
 
 ### Test Data
 
-Minimum allowed characters: 6
+Username: admin1  
+Minimum allowed characters: 6  
 Maximum allowed characters: 30
 
 ### Expected Result
@@ -134,14 +138,16 @@ User must be on the registration page with all other fields filled with valid va
 
 ### Steps
 
-1. Access the register page
-2. Fill all valid fields correctly
-3. Enter a value with **31 valid characters** in the "Username" field
-4. Click the **Next** button
+1. Access the website: https://accounts.google.com/lifecycle/steps/signup/username?TL=AHU8sQsvP3J5xkWIYArXuQNXyiodDh_kIXZ9-LHDw2SOoyPblilGhuK5eV1-kwbA&continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&dsh=S1275079143%3A1774029772256352&flowEntry=SignUp&flowName=GlifWebSignIn
+2. Access the register page
+3. Fill all valid fields correctly
+4. Enter a value with **31 valid characters** in the "Username" field
+5. Click the **Next** button
 
 ### Test Data
 
-Minimum allowed characters: 6
+Username: admin1234567890admin1234567890a  
+Minimum allowed characters: 6  
 Maximum allowed characters: 30
 
 ### Expected Result
@@ -175,14 +181,16 @@ User must be on the registration page with all other fields filled with valid va
 
 ### Steps
 
-1. Access the register page
-2. Fill all valid fields correctly
-3. Enter a value with **7 valid characters** in the "Username" field
-4. Click the **Next** button
+1. Access the website: https://accounts.google.com/lifecycle/steps/signup/username?TL=AHU8sQsvP3J5xkWIYArXuQNXyiodDh_kIXZ9-LHDw2SOoyPblilGhuK5eV1-kwbA&continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&dsh=S1275079143%3A1774029772256352&flowEntry=SignUp&flowName=GlifWebSignIn
+2. Access the register page
+3. Fill all valid fields correctly
+4. Enter a value with **7 valid characters** in the "Username" field
+5. Click the **Next** button
 
 ### Test Data
 
-Minimum allowed characters: 6
+Username: admin12  
+Minimum allowed characters: 6  
 Maximum allowed characters: 30
 
 ### Expected Result
@@ -216,14 +224,16 @@ User must be on the registration page with all other fields filled with valid va
 
 ### Steps
 
-1. Access the register page
-2. Fill all valid fields correctly
-3. Enter a value with **29 valid characters** in the "Username" field
-4. Click the **Next** button
+1. Access the website: https://accounts.google.com/lifecycle/steps/signup/username?TL=AHU8sQsvP3J5xkWIYArXuQNXyiodDh_kIXZ9-LHDw2SOoyPblilGhuK5eV1-kwbA&continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&dsh=S1275079143%3A1774029772256352&flowEntry=SignUp&flowName=GlifWebSignIn
+2. Access the register page
+3. Fill all valid fields correctly
+4. Enter a value with **29 valid characters** in the "Username" field
+5. Click the **Next** button
 
 ### Test Data
 
-Minimum allowed characters: 6
+Username: admin1234567890admin123456789  
+Minimum allowed characters: 6  
 Maximum allowed characters: 30
 
 ### Expected Result
@@ -257,14 +267,16 @@ User must be on the registration page with all other fields filled with valid va
 
 ### Steps
 
-1. Access the register page
-2. Fill all valid fields correctly
-3. Enter a value with **30 valid characters** in the "Username" field
-4. Click the **Next** button
+1. Access the website: https://accounts.google.com/lifecycle/steps/signup/username?TL=AHU8sQsvP3J5xkWIYArXuQNXyiodDh_kIXZ9-LHDw2SOoyPblilGhuK5eV1-kwbA&continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&dsh=S1275079143%3A1774029772256352&flowEntry=SignUp&flowName=GlifWebSignIn
+2. Access the register page
+3. Fill all valid fields correctly
+4. Enter a value with **30 valid characters** in the "Username" field
+5. Click the **Next** button
 
 ### Test Data
 
-Minimum allowed characters: 6
+Username: admin1234567890admin1234567890  
+Minimum allowed characters: 6  
 Maximum allowed characters: 30
 
 ### Expected Result
