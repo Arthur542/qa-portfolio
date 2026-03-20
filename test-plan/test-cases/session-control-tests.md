@@ -46,12 +46,18 @@ User must be previously registered in the system.
 
 **Test Steps:**
 
-1. Access the login page  
-2. Enter a valid username and password  
-3. Click the "Login" button  
-4. On the secure page, click "Logout"  
-5. On the login page, enter valid credentials again  
-6. Click the "Login" button  
+1. Access the website: https://the-internet.herokuapp.com/login
+2. Access the login page  
+3. Enter a valid username and password  
+4. Click the "Login" button  
+5. On the secure page, click "Logout"  
+6. On the login page, enter valid credentials again  
+7. Click the "Login" button
+
+**Test Data:**
+
+ Username: tomsmith
+ Password: SuperSecretPassword!
 
 **Expected Result:**  
 The system should authenticate the user again, redirect to the secure page, and display a success message.
