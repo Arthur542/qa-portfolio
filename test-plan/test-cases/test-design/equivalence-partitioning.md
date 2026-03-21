@@ -205,7 +205,7 @@ User must be on the registration page with all other fields filled with valid va
 
 ### Test Data
 
-Password: password  
+Password: pas  
 Minimum allowed characters: 8
 Maximum allowed characters: 100
 
