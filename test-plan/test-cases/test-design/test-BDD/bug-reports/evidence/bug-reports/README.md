@@ -1,3 +1,28 @@
+# Bug Reports – Evidence Summary
+
+This module contains evidence of defects identified during test execution.
+
+The reported bugs highlight issues related to calculation errors and input validation failures within the system.
+
+---
+
+## Covered Scenarios
+
+* Incorrect subtotal calculation in the checkout process
+* Invalid postal code accepted during checkout
+* Form submission allowed with invalid name input
+
+---
+
+Each bug includes a screenshot capturing the exact moment the defect occurs, providing clear and objective visual proof of the issue.
+
+The evidence focuses on demonstrating the problem without unnecessary steps, ensuring efficient communication and analysis.
+
+---
+
+These bug reports reflect real-world testing scenarios, emphasizing the importance of validation rules and accurate system behavior.
+
+
 # Bug Reports – Evidence
 
 This section contains visual evidence of identified defects during test execution.
@@ -54,7 +79,7 @@ The system accepts and submits invalid data.
 
 Evidence:
 
-![BUG-03 Name Validation](../images/bug-03-name.png)
+![BUG-03 Name Validation](../images/bug-03-name-.png)
 
 ---
 
