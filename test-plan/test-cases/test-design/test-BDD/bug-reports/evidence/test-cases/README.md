@@ -47,7 +47,7 @@ The system should authenticate the user and redirect to the secure page.
 
 **Evidence:**
 
-![Valid login](..images/auth-login.png)
+![Valid login](../images/auth-login.png)
 
 ---
 
